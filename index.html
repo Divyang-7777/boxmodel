@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>project</title>
+    </head>
+    <style>
+        
+        .box-grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 40px;
+
+        }
+        .box-grid div {
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(186, 215, 215);
+            margin: 10px 5px;
+            height: 400px;
+            width: 400px;
+            border-radius: 10px;
+            cursor: pointer;
+            background: radial-gradient(circle, #34abd3, #e29a62);
+            box-shadow: 0 10px 20px;
+
+        }
+        .box-grid p{
+            font-size: 32px;
+            color: rgb(32, 8, 190);
+        }
+        button{
+            background:linear-gradient( #f0f0e9, #ca5304);
+        }
+        @media(max-width: 760px) {
+            .box-grid {
+                display: grid;
+                grid-template-columns: auto;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+    
+            }
+        }
+        
+    </style>
+    <script>
+
+        function clickk1(){
+        document.getElementById('text1').innerHTML="clike in the box ";
+        document.getElementById('box1').style.height="800px";
+        document.getElementById('box1').style.width="800px";
+        }
+        function clickk2(){
+        document.getElementById('text2').innerHTML="clike in the box ";
+        document.getElementById('box2').style.height="800px";
+        document.getElementById('box2').style.width="800px";
+        }
+        function clickk3(){
+        document.getElementById('text3').innerHTML="clike in the box ";
+        document.getElementById('box3').style.height="800px";
+        document.getElementById('box3').style.width="800px";
+        }
+        function clickk4(){
+        document.getElementById('text4').innerHTML="clike in the box ";
+        document.getElementById('box4').style.height="800px";
+        document.getElementById('box4').style.width="800px";
+        }
+        function clickk5(){
+        document.getElementById('text5').innerHTML="clike in the box ";
+        document.getElementById('box5').style.height="800px";
+        document.getElementById('box5').style.width="800px";
+        }
+        function clickk6(){
+        document.getElementById('text6').innerHTML="clike in the box ";
+        document.getElementById('box6').style.height="800px";
+        document.getElementById('box6').style.width="800px";
+        }
+        function back1(){
+
+        document.getElementById('text1').innerHTML="Box1 ";
+        document.getElementById('box1').style.height="400px";
+        document.getElementById('box1').style.width="400px";
+        }
+        function back2(){
+        document.getElementById('text2').innerHTML="Box2 ";
+        document.getElementById('box2').style.height="400px";
+        document.getElementById('box2').style.width="400px";
+        }
+        function back3(){
+        document.getElementById('text3').innerHTML="Box3";
+        document.getElementById('box3').style.height="400px";
+        document.getElementById('box3').style.width="400px";
+        }
+        function back4(){
+        document.getElementById('text4').innerHTML="Box4 ";
+        document.getElementById('box4').style.height="400px";
+        document.getElementById('box4').style.width="400px";
+        }
+        function back5(){
+        document.getElementById('text5').innerHTML="Box5 ";
+        document.getElementById('box5').style.height="400px";
+        document.getElementById('box5').style.width="400px";
+        }
+        function back6(){
+        document.getElementById('text6').innerHTML="Box6 ";
+        document.getElementById('box6').style.height="400px";
+        document.getElementById('box6').style.width="400px";
+        }
+    </script>
+
+
+    <body>
+        <div class="box-grid">
+            <div id="box1" onclick="clickk1()">
+                <p id="text1">Box1</p>
+                <button id="btn1" ondblclick="back1()">Back</button>
+            </div>
+            <div id="box2" onclick="clickk2()">
+                <p id="text2">Box2</p>
+                <button id="btn2" ondblclick="back2()">Back</button>
+            </div>
+            <div id="box3" onclick="clickk3()">
+                <p id="text3">Box3</p>
+                <button id="btn3" ondblclick="back3()">Back</button>
+            </div>
+            <div id="box4" onclick="clickk4()">
+                <p id="text4">Box4</p>
+                <button id="btn4" ondblclick="back4()">Back</button>
+            </div>
+            <div id="box5" onclick="clickk5()">
+                <p id="text5">Box5</p>
+                <button id="btn5" ondblclick="back5()">Back</button>
+            </div>
+            <div id="box6" onclick="clickk6()">
+                <p id="text6">Box6</p>
+                <button id="btn6" ondblclick="back6()">Back</button>
+            </div>
+        </div>
+    </body>
+</html>
